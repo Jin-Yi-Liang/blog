@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Algorithm Page</title>
     <link rel="stylesheet" href="simple.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
     <header>
@@ -15,6 +17,30 @@
         </ul>
     </nav>
     <main>
+        <div class="problems">
+            <h2>problems</h2>
+            <table class="string">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>url</th>
+                        <th>difficulty</th>
+                        <th>status</th>
+                        <th>note</th>
+                    </tr>
+                <thead>
+                <tbody>
+                    <tr>
+                        <td>substring</td>
+                        <td><a href="https://ac.nowcoder.com/acm/contest/129582/B" alt="子序列题目">sub-string</a></td>
+                        <td>1300</td>
+                        <td>doing</td>
+                        <td><a href="https://app.notion.com/p/325c9d44cf2d8114bce8e4d0ee4b2776" alt="子序列题解">note</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr />
         <div class="bilibili">
             <h2>BiliBili video records</h2>
             <div class="contest">
@@ -27,8 +53,18 @@
                 <p>.................</p>
             </div>
         </div>
-
+        <div class="video">
+            <h2>recording video</h2>
+            <video width="1200" controls>
+                <source src="video/algorithm_video1.webm" alt="算法刷题实录视频1" type="video/webm" />
+                <track src="video/caption.vtt" kind="subtitles" srclang="cn" label="Chinese" default/>
+                <track src="video/caption.vtt" kind="subtitles" srclang="en" label="English" default/>
+                <p>your browser does not support this video's type.please change to firefox</p>
+            </video>
+        </div>
+        
     </main>
+    <hr />
     <footer>
         <p>© 2026 Jin-Yi-Liang all rights reserved</p>
     </footer>

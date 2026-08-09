@@ -1,0 +1,45 @@
+<!doctype HTML>
+<head>
+    <meta charset="utf-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="simple.css">
+</head>
+<body>
+    <header>
+        <h1>Your Feedback</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home page</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="feedback_form">
+            <form action="handle_feedback.html" method="post">
+                <fieldset class="sex">
+                    <legend>choose your sex</legend>
+                    <div>
+                        <input type="radio" id="sexChoice1" name="sex" value="male" checked />
+                        <label for="sexChoice1">male</label>
+                        <input type="radio" id="sexChoice2" name="sex" value="female"  />
+                        <label for="sexChoice2">female</label>
+                        <input type="radio" id="sexChoice3" name="sex" value="other" disabled />
+                        <label fro="sexChoice3">other</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="message">
+                    <legend>Enter your feedback message</legend>
+                    <textarea id="message1" name="message" rows=33 cols=50 required>Message</textarea>
+                    <label for="message1">Message</label>
+                </fieldset>
+
+            <button>submit</button>
+            </form>
+        </div>
+    </main>
+    <hr />
+    <footer>
+        <p>© 2026 Jin-Yi-Liang all rights reserved</p>
+    </footer>
+</body>
