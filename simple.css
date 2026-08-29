@@ -1,3 +1,14 @@
 html{
-    background-color:antiquewhite
+    background-color:antiquewhite;
+    font-family: "楷体";
+}
+
+#message1{
+    font-style: italic;
+    font-size:15px;
+    font-weight:bold;
+
+    border-color:black;
+    border-style:dashed;
+    border-width: 2px;
 }
