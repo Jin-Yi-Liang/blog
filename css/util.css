@@ -1,0 +1,36 @@
+html{
+    background-color:antiquewhite;
+    font-family: "楷体";
+    background: linear-gradient(to right bottom,antiquewhite,85%,white);
+}
+
+body{
+    margin:10px;
+    padding:30px;
+}
+
+header, main{
+    text-align: center;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 200px auto;
+}
+
+nav{
+    box-shadow: 1px 2px 5px 2px #CDCCCC;
+}
+
+a:link{
+    color:blue;
+}
+a:visited{
+    color:grey;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:gray;
+}

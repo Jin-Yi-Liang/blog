@@ -1,48 +1,6 @@
-html{
-    background-color:antiquewhite;
-    font-family: "楷体";
-}
-
-body{
-    margin:10px;
-    padding:30px;
-}
-
-header, main{
-    text-align: center;
-}
-
-nav{
-    box-shadow: 1px 2px 5px 2px #CDCCCC;
-}
-
 p:hover{
     background-color:white;
     font-size:150%;
     font-style:italic;
     font-weight:bold;
-}
-
-a:link{
-    color:blue;
-}
-a:visited{
-    color:grey;
-}
-a:hover{
-    color:red;
-}
-a:active{
-    color:gray;
-}
-
-#message1{
-    font-style: italic;
-    font-size:15px;
-    font-weight:bold;
-
-    border-color:black;
-    border-style:dashed;
-    border-width: 2px;
-    border-radius:10px;
 }
