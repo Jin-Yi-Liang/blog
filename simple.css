@@ -3,6 +3,31 @@ html{
     font-family: "楷体";
 }
 
+body{
+    margin:10px;
+    padding:30px;
+}
+
+p:hover{
+    background-color:white;
+    font-size:150%;
+    font-style:italic;
+    font-weight:bold;
+}
+
+a:link{
+    color:blue;
+}
+a:visited{
+    color:grey;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:gray;
+}
+
 #message1{
     font-style: italic;
     font-size:15px;
