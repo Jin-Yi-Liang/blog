@@ -1,0 +1,12 @@
+.notes{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.note{
+    width: 20%;
+    background-color: lightgray;
+}
