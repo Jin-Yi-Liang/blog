@@ -8,6 +8,13 @@ body{
     padding:30px;
 }
 
+header, main{
+    text-align: center;
+}
+
+nav{
+}
+
 p:hover{
     background-color:white;
     font-size:150%;
