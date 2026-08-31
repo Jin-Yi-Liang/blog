@@ -13,14 +13,21 @@ header, article{
 }
 
 main{
-    display:grid;
-    grid-template-columns: 200px auto;
+    position:relative;
 }
 
 aside{
+    position:absolute;
+    left:10px;
+    top:0;
+    width:180px;
     height:300px;
-    margin-left: 10px;
-    box-shadow: 1px 2px 5px 2px #CDCCCC;
+
+    box-shadow:1px 2px 5px 2px #CDCCCC;
+}
+
+nav{
+    width:100%;
 }
 
 a:link{

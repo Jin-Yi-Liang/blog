@@ -12,4 +12,12 @@ function welcomeWindow() {
     }
 }
 
+function showCurrentTime(){
+    let time=document.getElementById("time");
+    setInterval(function(){
+        time.textContent=getCurrentTime();
+    },1000);
+}
+
 welcomeWindow();
+showCurrentTime();

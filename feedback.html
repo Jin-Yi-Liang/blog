@@ -1,5 +1,5 @@
 <!doctype HTML>
-<head xmlns="http://www.w3.org/1999/html">
+<head xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <meta charset="utf-8">
     <title>Feedback</title>
     <link rel="stylesheet" href="css/util.css">
@@ -24,19 +24,25 @@
         <section>
             <article>
                 <div class="feedback_form">
-                    <select id="sex">
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                    </select>
-                    <label for="sex"></label>
-
-                    <input type="file" id="file">
+                    <fieldset class="sex">
+                        <legend>Select your sex</legend>
+                        <select id="sex">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                        <label for="sex"></label>
+                    </fieldset>
 
                     <fieldset class="message">
                         <legend>Enter your feedback message</legend>
-                        <textarea id="content" name="message" rows=10 cols=50 required>Message</textarea>
+                        <textarea id="content" name="message" rows=20 cols=50 required>Message</textarea>
                         <label for="content"></label>
+                    </fieldset>
+
+                    <fieldset class="file">
+                        <legend>Upload your proof materials (optional)</legend>
+                        <input type="file" id="file">
                     </fieldset>
 
                     <button id="submit_button" onclick="submitFeedback()">submit</button>
