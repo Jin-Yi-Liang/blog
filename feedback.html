@@ -4,8 +4,9 @@
     <title>Feedback</title>
     <link rel="stylesheet" href="css/util.css">
     <link rel="stylesheet" href="css/feedback.css">
-    <script src="js/feedback.js" defer></script>
+    <script src="js/jquery-4.0.0.js" type="text/javascript" defer></script>
     <script src="js/util.js" type="text/javascript" defer></script>
+    <script src="js/feedback.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
         </aside>
         <section>
             <article>
-                <div class="feedback_form">
+                <form class="feedback_form">
                     <fieldset class="sex">
                         <legend>Select your sex</legend>
                         <select id="sex">
@@ -45,8 +46,8 @@
                         <input type="file" id="file">
                     </fieldset>
 
-                    <button id="submit_button" onclick="submitFeedback()">submit</button>
-                </div>
+                    <input type="button" id="submit_button" onclick="submitFeedback()" value="Submit" />
+                </form>
             </article>
         </section>
         <hr />

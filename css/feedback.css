@@ -1,4 +1,9 @@
-section{
-    margin-left: auto;
-    margin-right: auto;
+.feedback_form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset{
+    width:40%;
 }

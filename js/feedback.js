@@ -1,8 +1,14 @@
 function submitFeedback() {
     let result=confirm("Are you sure you want to submit this feedback message?");
     if(result===true){
-        let content=document.getElementById('content');
-        console.log("submit content: "+content.value);
+        let content=$("#content");
+        let sex=$("#sex");
+        let file=$("#file");
+        let time=getCurrentTime();
+        console.log("submit time: "+time+"\n"+
+            "content: "+content[0].value+"\n"+
+            "sex: "+sex[0].value+"\n"+
+            "file: "+file[0].value);
     }
     else{
         console.log("user conceal to submit feedback message");
