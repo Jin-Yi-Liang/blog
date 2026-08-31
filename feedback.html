@@ -1,5 +1,5 @@
 <!doctype HTML>
-<head>
+<head xmlns="http://www.w3.org/1999/html">
     <meta charset="utf-8">
     <title>Feedback</title>
     <link rel="stylesheet" href="css/util.css">
@@ -21,27 +21,22 @@
         <section>
             <article>
                 <div class="feedback_form">
-<!--                    <form action="handle_feedback.html" method="post">-->
-                        <fieldset id="sex">
-                            <legend>choose your sex</legend>
-                            <div>
-                                <input type="radio" id="sexChoice1" name="sex" value="male" checked />
-                                <label for="sexChoice1">male</label>
-                                <input type="radio" id="sexChoice2" name="sex" value="female"  />
-                                <label for="sexChoice2">female</label>
-                                <input type="radio" id="sexChoice3" name="sex" value="other" disabled />
-                                <label for="sexChoice3">other</label>
-                            </div>
-                        </fieldset>
+                    <select id="sex">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                    <label for="sex"></label>
 
-                        <fieldset class="message">
-                            <legend>Enter your feedback message</legend>
-                            <textarea id="content" name="message" rows=10 cols=50 required>Message</textarea>
-                            <label for="content"></label>
-                        </fieldset>
+                    <input type="file" id="file">
+
+                    <fieldset class="message">
+                        <legend>Enter your feedback message</legend>
+                        <textarea id="content" name="message" rows=10 cols=50 required>Message</textarea>
+                        <label for="content"></label>
+                    </fieldset>
 
                     <button id="submit_button" onclick="submitFeedback()">submit</button>
-<!--                    </form>-->
                 </div>
             </article>
         </section>

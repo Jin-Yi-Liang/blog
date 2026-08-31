@@ -24,9 +24,29 @@ function listenContent(){
     }
 }
 
-function registEventListener(){
-    listenContent();
-
+function listenSex(){
+    let sex=document.getElementById("sex");
+    sex.onchange=function(){
+        console.log(sex.value);
+    }
 }
 
-registEventListener();
+function listenFile(){
+    let file=document.getElementById("file");
+    file.oninput=function(){
+        if(file.value!==""){
+            console.log("file is uploaded: "+file.value);
+        }
+        else{
+            console.log("file is empty");
+        }
+    }
+}
+
+function registerEventListener(){
+    listenContent();
+    listenSex();
+    listenFile();
+}
+
+registerEventListener();
