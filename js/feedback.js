@@ -24,4 +24,9 @@ function listenContent(){
     }
 }
 
-listenContent();
+function registEventListener(){
+    listenContent();
+
+}
+
+registEventListener();
