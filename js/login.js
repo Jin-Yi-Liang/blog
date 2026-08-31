@@ -16,11 +16,11 @@ function login(){
     let username=document.getElementById("username").value;
     let password=document.getElementById("password").value;
     //get current time
-    let time=util.getCurrentTime();
+    let time=getCurrentTime();
     //output to console
-    console.log("Last login time: "+time);
-    console.log("Username: "+username);
-    console.log("Password: "+password);
+    console.log("Login time: "+time+"\n"+
+        "Username: "+username+"\n"+
+        "Password: "+password);
 }
 
 listenLogin();
