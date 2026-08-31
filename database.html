@@ -1,0 +1,46 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Database</title>
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/database.css">
+    <script src="js/database.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="header">DataBase query</h1>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a id="prev-page" onclick="goToPrevPage()">Previous Page</a></li>
+                    <li><a id="next-page" onclick="goToNextPage()">Next Page</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <article>
+                <input type="button" id="query" value="Query" onclick="query()">
+                <table id="table">
+                    <thead id="table-head">
+                        <tr>
+                            <td>Name</td>
+                            <td>Sex</td>
+                            <td>Age</td>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </article>
+            <hr />
+            <footer>
+                <p>© 2026 Jin-Yi-Liang all rights reserved</p>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
