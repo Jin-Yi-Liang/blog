@@ -12,12 +12,17 @@ function welcomeWindow() {
     }
 }
 
-function showCurrentTime(){
+//展示当前时间
+function showTime(){
     let time=document.getElementById("time");
-    setInterval(function(){
-        time.textContent=getCurrentTime();
-    },1000);
+    time.textContent = getCurrentTime();
+}
+
+//循环函数 每个一秒调用一次展示当前时间的函数
+function IntervalShowTime(){
+    let time=document.getElementById("time");
+    setInterval(showTime,1000);
 }
 
 welcomeWindow();
-showCurrentTime();
+IntervalShowTime();
