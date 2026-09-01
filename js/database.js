@@ -71,8 +71,8 @@ function registerQueryListening(){
 
     $("#table-body").on("click", ".update",function(){
         let new_val=prompt("Enter new value: ");
-        if(new_val!==null){
-            console.log("new value"+new_val);
+        if(new_val!=="" && new_val!==null){
+            console.log("new value: "+new_val);
         }
     })
 
