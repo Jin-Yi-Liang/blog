@@ -5,10 +5,7 @@ function submitFeedback() {
         let sex=$("#sex");
         let file=$("#file");
         let time=getCurrentTime();
-        console.log("submit time: "+time+"\n"+
-            "content: "+content[0].value+"\n"+
-            "sex: "+sex[0].value+"\n"+
-            "file: "+file[0].value);
+        console.log("submit time: "+time+"\n"+ "sex: "+sex.val()+"\n"+ "content: "+content.val()+"\n"+ "file: "+file.val());
     }
     else{
         console.log("user conceal to submit feedback message");
