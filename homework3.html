@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>图像画廊</title>
+
+    <style>
+        /* 页面样式 */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 标题 */
+        h3 {
+            font-size: 22px;
+            color: black;
+            margin-top: 30px;
+        }
+
+        /* 画廊容器 */
+        .gallery {
+            width: 100%;
+            height: 140px;
+            border-top: 2px solid lime;
+            border-bottom: 2px solid lime;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 滚动区域 */
+        .scroll-box {
+            width: 500px;
+            overflow: hidden;
+        }
+
+        /* 图片列表 */
+        .image-list {
+            display: flex;
+            width: max-content;
+            animation: scroll 12s linear infinite;
+        }
+
+        /* 图片样式 */
+        .image-list img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #cc0066;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        /* 图片滚动动画 */
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* 鼠标悬停暂停滚动 */
+        .scroll-box:hover .image-list {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>图像画廊</h3>
+
+    <div class="gallery">
+        <div class="scroll-box">
+            <div class="image-list">
+
+                <!-- 第一组图片 -->
+                <img src="https://picsum.photos/id/10/200/200" alt="风景1">
+                <img src="https://picsum.photos/id/20/200/200" alt="风景2">
+                <img src="https://picsum.photos/id/30/200/200" alt="风景3">
+                <img src="https://picsum.photos/id/40/200/200" alt="风景4">
+                <img src="https://picsum.photos/id/50/200/200" alt="风景5">
+
+                <!-- 第二组图片：用于无缝循环 -->
+                <img src="https://picsum.photos/id/10/200/200" alt="风景1">
+                <img src="https://picsum.photos/id/20/200/200" alt="风景2">
+                <img src="https://picsum.photos/id/30/200/200" alt="风景3">
+                <img src="https://picsum.photos/id/40/200/200" alt="风景4">
+                <img src="https://picsum.photos/id/50/200/200" alt="风景5">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
